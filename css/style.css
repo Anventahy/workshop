@@ -1,0 +1,510 @@
+/* Настройки для всего документа */
+
+html {
+   box-sizing: border-box; 
+}
+
+/* Для всех */
+
+*,*::after, *::before {
+    box-sizing: border-box;
+}
+
+/* container */
+
+.container {
+    display: flex;
+    max-width: 960px;
+    background-color: #ebe4e4;
+    justify-content: space-between; /* элементы бвли на разных сторонах */
+    margin: 20px auto;
+    box-shadow: 1px 1px 10px rgb(0,0,0,0.1); /* тень вокруг всего блока резюме */
+}
+
+/* profile */
+
+.profile {
+    flex-basis: 35%; /* задаем ширину с помощью флекса */
+    background-color: #39383a;
+    color: #ababab;
+}
+
+/* profile-photo */
+
+.profile-photo {
+    height: 230px;
+    background-image: url(/img/photo.png); /* фоновое изображение */
+    background-size: cover; /* занимает все место */
+    background-position: center; /* выравнивание по центру */
+    background-repeat: no-repeat;  /* отключаем повторение фото */
+}
+
+/* profile-info */
+
+.profile-info {
+    padding-left: 30px;  /* отступы */
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+/* profile-text */
+
+.profile-text {
+    font-size: 13px;   /* шрифт */
+    line-height:  24.19px; /* межстрочный интервал */
+    margin-bottom: 50px; /* нижний отсутп от текста */
+}
+
+/* heading */
+
+.heading {
+    margin: 0;  /* убераем отсутпы */
+    padding-bottom: 16px; /* нижнии отступ */
+    text-transform: uppercase; /* заголовок заглавными буквами */
+    font-weight: 700; /* высота букв */
+}
+
+/* heding-light */
+
+.heading-light {
+    color: #fff;
+    border-bottom: 2px #5a5a5a dashed;
+}
+
+/* contacts */
+
+.contacts {
+    margin-bottom: 70px;
+}
+
+/* contacts-titel */
+
+.contacts-titel {
+    color: #fff;
+    margin-bottom: 13px; /* нижнии отсутп */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* contacts-text */
+
+.contacts-text {
+    color: #ababab;
+    text-decoration: none; /* убираем подчеркивание ссылок*/
+    padding-left: 27px; /* отступ */
+    line-height:  20.97px; /* межстрочный интервал */
+}
+
+/* contacts-item */
+
+.contacts-item {
+    padding-bottom: 24px; /* отсутп */
+    padding-top: 24px;
+    border-bottom: 2px #5a5a5a dashed; /* пунктирная линия */
+}
+
+/* address */
+
+address {
+   font-style: normal;  /* убираеи у адреса наклон */
+}
+
+/* fas */
+
+.fas {
+    margin: 7px;
+}
+
+/* languages */
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;  /* круглишки друг за другом */
+    padding-top: 40px; /* отступы */
+}
+
+/* languag */
+
+.languag {
+    width: 100px; /* ширина */
+    height: 100px; /*высота */
+    border: 6px solid #5c5c5c; /* обводка */
+    border-radius: 50%; /* делаем обводку круглой */
+    display: flex; /* для того чтобы сделать все элементы по центру */
+    justify-content: center; /* выравнивание по горизонтале */
+    align-items: center; /* выравнивание по вертикале */
+    flex-direction: column; /* чтобы элементы встали друг под другом */
+    margin-bottom: 30px; /* отсутп снизу */
+    margin-right: 30px; /* отступ с права */
+}
+
+.languag:nth-child(3) {  /* для 3 класса languag greak отключаем отсутп */
+    margin-bottom: 0;
+}
+
+/* languag-text */
+
+.languag-text {
+    text-transform: uppercase; /* делаем текст заглавными */
+    font-size: 11px; /* размер шрифта */
+}
+
+/* languag-per */
+
+.languag-per {
+    font-size: 15px; /* размер шрифта */
+    font-weight: 600; /* жирность */
+}
+
+/* line */
+
+.lines {
+    display: flex; /* превращаем в строку */
+    flex-direction: column; /* в колону выстраваем */
+    justify-content: center; /* выравниваем по центру */
+}
+
+.line {
+    display: block; /* делаем блочными */
+    width: 90px; /* высотоа */
+    height: 2px; /* ширина */
+    background-color: #5c5c5c; /* цвет */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.line:nth-child(2) {  /* с помощью nth-child 2 линию увеличиваем на 100px */
+    width: 100px; 
+    margin-left: 20px;
+}
+
+/* resume */
+
+.resume {
+    padding: 25px 30px;
+    flex-basis: 63%; /* ширина блока резюме */
+    background-color: #fff;
+}
+
+/* resume-wrap */
+
+.resume-wrap {
+    border: 1px solid rgba(168, 168, 168, 0.44); /* обводка рамки */
+    padding: 36px 56px; /* внутрение отступы */
+    min-height: 100%;
+}
+
+/* logo */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* logo-img */
+
+.logo-img {
+    width: 90px;
+    height: 90px;  
+    border: 1px solid #39383a;
+    border-radius: 50%; /* скругление */
+    display: flex; /* делаем флексовым блоком */
+    justify-content: center; /* выравниваем контент по центру горизонатли */
+    align-items: center; /* текст по центру вертикали */
+}
+
+/* logo-lines */
+
+.logo-lines {
+    display: flex; /* делаем флексовым */
+    align-items: center; /* по центру вертикали */
+    justify-content: center; /* выравниваем контент по центру горизонатли */
+    flex-direction: column; /* выстраевание по строчкам */
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+/* logo-line */
+
+.logo-line {   /* рисовка линии */
+    width: 43px;
+    height: 2px;
+    background-color: #39383a;
+    margin-top: 10px; /* отступы */
+    margin-bottom: 10px; /* отступы */
+}
+
+.logo-lines_left .logo-line:nth-child(2) { /*двигаем 2 элемент по счету */
+    margin-right: 20px;
+    width: 55px; /* увеличиваем ширину */
+}
+
+.logo-lines_right .logo-line:nth-child(2) { /*двигаем 2 элемент по счету */
+    margin-left: 20px;
+    width: 55px; /* увеличиваем ширину */
+}
+
+/* about */
+
+.about {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center; /* выравнивание по центру */
+    margin-bottom: 40px;
+}
+
+/* name */
+
+.name {
+    font-size: 16px; /* размер шрифта */
+    text-transform: uppercase; /* текст заглавными буквами */
+    letter-spacing: 10.75px; /* расстояние между буквами */
+    margin-bottom: 10px;
+}
+
+/* position */
+
+.position {
+    display: inline-block; /* делаем блочгым */
+    font-size: 9px;
+    text-transform: uppercase; /* текст заглавными буквами */
+    color: #808080;
+    margin-bottom: 30px;
+}
+
+/* about-adress */
+
+.about-adress {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* about-contacts */
+
+.about-contacts {
+    font-size: 8px;
+}
+
+/* about-contacts__link */ 
+
+.about-contacts__link {
+    text-decoration: none;
+    color: #777777;
+}
+
+/* heading_dark */
+
+.heading_dark {
+    font-size: 16px; /* размер шрифта */
+    font-weight: 400; /* шрина шрифта */
+    border-bottom: 1px solid #e0e0e0; /* линия после */
+    margin-bottom: 37px;
+}
+
+/* list */
+
+.list {
+    list-style: none; /* отключение декорирования спсика */
+    padding-left: 0;
+}
+
+/* list-item */
+
+.list-item {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px dashed #ececec; /* пунктирная линия */
+}
+
+/* list-item */
+
+.list-item:before { /* присваем новый элемент списка через before */
+    content: ''; /* содержание */
+    /* display: inline-block; делаем трочно-блочным */
+    position: absolute; /* позиция */
+    left: 0;   /* расположение элемента */ 
+    top: 3px; /* расположение элемента */ 
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #000;
+} 
+
+/* list-item__title */
+
+.list-item__title {
+    font-style: 11px;
+    text-transform: uppercase; /* текст заглавными буквами */
+    margin-bottom: 5px;
+}
+
+/* list-item__date */
+
+.list-item__date {
+    font-style: 10px;
+    text-transform: uppercase; /* текст заглавными буквами */
+}
+
+/* list-item__text */
+
+.list-item__text {
+    font-style: 10px;
+    color: #777777;
+
+}
+
+/* list-item list-item_non-border */
+
+.list-item_non-border {
+    border: none;
+}
+
+/* heading_skills */
+
+.heading_skills {
+    margin-bottom: 48px;
+}
+
+/* skills-list */
+
+.skills-list {
+    list-style: none; /* убираем точки списска */
+    padding-left: 0;    
+}
+
+/* skills-list__item */
+
+.skills-list__item {
+    margin-bottom: 30px;
+    text-transform: uppercase; /* текст заглавными буквами */
+    font-size: 11px;
+    display: flex; /*делаем флексовым */
+    justify-content: space-between; /* по центру */
+}
+
+/* level */
+
+.level {
+    width: 70%;
+    height: 8px;
+    border: 1px solid #39383a;
+    position: relative; /* фиксация позиций */
+}
+
+.level:before {   /* заполнение полос */
+    content: '';
+    position: absolute; /* позиция */
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #898989;
+}
+
+/* заполнение полосок через before */
+
+.level-80:before {
+    width: 80%;
+}
+.level-90:before {
+    width: 90%;
+}
+.level-50:before {
+    width: 50%;
+}
+
+/* адаптивна врстка */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;  /* при раз 992 кнтейнер перейдет в колонку */
+        width: 70%;
+    } 
+    .profile-photo {
+        height: 200px; 
+        width: 200px;    
+        border-radius:  50%;
+        border: 3px solid;   
+        margin: 30px auto;
+    }
+    .profile {
+        position: relative;
+    }
+    .profile:before {
+        content: '';
+        width: 100%;
+        height: 150px;
+        background-color: rgb(185, 185, 185);
+        display: block;
+        position: absolute;        
+    }
+    .profile-photo {
+        position: relative;
+        z-index: 9;
+    }
+    .lines {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .resume {
+        padding: 10px;
+    }
+    .resume-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .list-item__title {
+        font-size: 14px;
+    }
+    .list-item__data {
+        font-size: 12px;
+    }
+    .list-item__text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    .about-contacts {
+        display: block;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 567px) {
+    .logo-img {
+        width: 70px;
+        height: 70px;
+    }
+    .logo-line {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        display: none;
+    }
+    .container {
+        min-width: 320px;
+    }
+    .name {
+        letter-spacing: normal;
+    }
+    .level {
+        width: 50%;
+    }
+}
